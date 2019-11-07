@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DineServe</string>
+    <string name="web_client_id">885680493348-gvn85iiaqd8e6t65t9lsn3dr11b7r7h0.apps.googleusercontent.com</string>
+
+    <string name="fragment_map_search">fragment_map__search</string>
+    <string name="string_fragment_map_search">sai</string>
+    <string name="title_activity_main">Digital Menu</string>
+    <string name="text_hoes_here_lol">Welcome to Demo Restaurant!</string>
+    <string name="menu_display_image">whaddaya want buuub?</string>
+    <string name="add_to_my_menu_">Add this Item to Order.</string>
+    <string name="add_to_my_menu">add_to_my_menu_</string>
+
+
+</resources>

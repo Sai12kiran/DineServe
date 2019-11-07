@@ -1,0 +1,338 @@
+[
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cart.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\cart.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_form.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\search_form.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_actionbar_shadow.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\actionbar_shadow.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_share.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_share.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_category_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\category_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_checkout.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\checkout.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_top_style_1.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\button_top_style_1.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_image_header.jpg.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\image_header.jpg"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_menu_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw600dp\\menu_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_transparant.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\transparant.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_category_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\category_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border_shadow2.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\border_shadow2.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw600dp\\fragment_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_checkout.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\btn_checkout.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_checkout.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\icon_checkout.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_profile.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_profile.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\grid_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_drawer_main.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\nav_drawer_main.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_splash.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\splash.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_category_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw600dp\\category_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_drawer_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\nav_drawer_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp_fragment_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw600dp\\fragment_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_your_order.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\your_order.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_drawer_shadow.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\navigation_drawer_shadow.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_swipetab_fragment.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\swipetab_fragment.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_swipetab.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\swipetab.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\fragment_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_about.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_about.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_nav_back2.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\nav_back2.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_open_main.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\anim\\open_main.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_category.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\menu\\menu_category.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_delete.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\btn_delete.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw800dp_fragment_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw800dp\\fragment_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_delete_pressed.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\button_delete_pressed.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_cart.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_cart.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_ab_overflow_compat.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_ab_overflow_compat.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_checkout.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\checkout.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_detail.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\menu_detail.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_buy_pressed.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_buy_pressed.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border_shadow.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\border_shadow.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\fragment_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_open_next.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\anim\\open_next.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_order_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\order_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_contact_us.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\contact_us.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_list_selector.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\list_selector.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw480dp_category_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw480dp\\category_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_contact.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_contact.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\menu\\menu_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_url.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\loading_url.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_home.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_info.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_info.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_checkout.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_checkout.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_list_item_bg_normal.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\list_item_bg_normal.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_about.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_actionbar_icon_placeholder_compat.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\actionbar_icon_placeholder_compat.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_drawer.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_splash.jpg.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\splash.jpg"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_confirm.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\confirm.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_detail.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\menu\\menu_detail.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_no_color.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\no_color.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_ab_up_compat.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_ab_up_compat.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_loading.jpg.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\loading.jpg"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw480dp_fragment_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw480dp\\fragment_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_close_main.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\anim\\close_main.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_checkout_pressed.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\icon_checkout_pressed.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_buy.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_buy.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\menu_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\menu_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_list_item_bg_pressed.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\list_item_bg_pressed.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_product.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_product.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_close_next.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\anim\\close_next.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_refresh.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_action_refresh.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw480dp_fragment_list.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw480dp\\fragment_list.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_menu_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout\\main_menu_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_button_delete.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\button_delete.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw480dp_menu_list_item.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\layout-sw480dp\\menu_list_item.xml"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_exit.png.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable-hdpi\\ic_exit.png"
+    },
+    {
+        "merged": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_buy.xml.flat",
+        "source": "E:\\Projects for code-projects\\android projects\\EcommerceAndroidApp\\AndroidProjects\\AndroidStudio\\EcommerceAndroidApp\\app\\src\\main\\res\\drawable\\btn_buy.xml"
+    }
+]

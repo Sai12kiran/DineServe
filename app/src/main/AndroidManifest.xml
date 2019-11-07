@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dineserve">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".detaildisplay"></activity>
+
+        <activity
+            android:name=".Paytm"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NoofTab" />
+        <activity android:name=".successfull" />
+        <activity android:name=".HotelTypes" />
+        <activity android:name=".PartyDate" />
+        <activity android:name=".PartyType" />
+        <activity android:name=".GuestListAdapter" />
+        <activity android:name=".Tablebook" />
+        <activity android:name=".diffresto" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".FoodOrdering" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".OtpVerify" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".Googlesignin" />
+        <activity
+            android:name=".tabook"
+            android:noHistory="true" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBHQWHiQX0uZm_titl46O2BitZM0oZEDr0" />
+    </application>
+
+</manifest>

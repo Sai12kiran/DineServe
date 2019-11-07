@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Price_Ranges">
+        <item>Select your price</item>
+        <item>10000.Rs</item>
+        <item>20000.Rs</item>
+        <item>30000.Rs</item>
+        <item>40000.Rs</item>
+        <item>50000.Rs</item>
+        <item>60000.Rs</item>
+    </string-array>
+</resources>

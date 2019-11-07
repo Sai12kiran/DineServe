@@ -1,0 +1,52 @@
+1.Open the vm ware.
+2.choose historical instance.
+3.After choose local user and log in.
+3.Go to home proceed with Reclaim.
+4.Click on Data centers.
+5.check the Time Remaining
+ Cost
+ Optimized.
+6.Use the filter and select the Vcenter.
+7.Edit settings of Reclaim.
+8.proceed with save.
+9.Click the msbu-east virtual center.
+10.Select the filter area and type "east"
+11.Hit Enter.
+12.Click on Powered Off VM.
+13.Open the Cluster east-comp
+14.Select the VM to delete.
+15.Select DELETE VM button.
+16.select cancel.
+17.Click the Idle VMs tab
+ Open east-comp
+ Select all
+ Select Power Off VM
+18.select snapsorts tab.
+19.Delete the "east" filter in the highlighted section
+ Hit enter.
+20.expand east-mgmt datacenter.
+21.Scroll down to the bottom
+ Find the resource that has the most recent snapshot
+ Select SAP-HM13
+22.Scroll Back up
+ Select EXCLUDE VM.
+23.select show excluded vm.
+24.Select SAP-HM13
+ Select INCLUDE VM.
+25.Scroll Back down
+ Open east-mgmt Cluster.
+26.Select Snapshots
+ Select the box to select all VM's
+ Select Delete Snapshots.
+27.use filter and type east and run.
+28.Select Oversized VM's
+ Open up the east-mgmt data center
+ Select the selection box at the top and click resize VM's.
+ Select Resize VM.
+30.click on pencil and edit recommondations.
+31.change your memory from 4gb to anything.
+32.Go back to Dashboards and reports.
+33.use filters oversized.
+34.click on run template.
+35.Go to generated reports and download it.
+36.At the final you can view your report.

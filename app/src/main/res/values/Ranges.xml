@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="Range_of_Party_in_members">
+        <item>please select range</item>
+        <item>100-200</item>
+        <item>200-500</item>
+        <item>500-800</item>
+        <item>800-1000</item>
+        <item>1000-1500</item>
+    </string-array>
+    
+</resources>

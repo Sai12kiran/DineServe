@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Rate_per_plare">
+        <item>select range of price per plate </item>
+        <item>100rs per plate</item>
+        <item>300rs per plate</item>
+        <item>500rs per plate</item>
+        <item>700rs per plate</item>
+        <item>900rs per plate</item>
+    </string-array>
+</resources>

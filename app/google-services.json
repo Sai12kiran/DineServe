@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "885680493348",
+    "firebase_url": "https://dineserve-d49bb.firebaseio.com",
+    "project_id": "dineserve-d49bb",
+    "storage_bucket": "dineserve-d49bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885680493348:android:a02eb31915ad9c4cef19b1",
+        "android_client_info": {
+          "package_name": "com.example.dineserve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885680493348-23omkr70o1u2j8lfrd8mom82ht077d7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dineserve",
+            "certificate_hash": "ff73f06885b8688b68498c3b131c733f886b2f41"
+          }
+        },
+        {
+          "client_id": "885680493348-gvn85iiaqd8e6t65t9lsn3dr11b7r7h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQz6Mew0dNGS98aYQ19Wo8tD8Ft5hU48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885680493348-gvn85iiaqd8e6t65t9lsn3dr11b7r7h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Tablebook">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/person_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:hint="enter_name"
+            android:inputType="textPersonName|textCapWords"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColorHint="#CDDC39" />
+
+        <EditText
+            android:id="@+id/party_count_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="#003F3636"
+            android:contentDescription="party_size_hint"
+            android:hint="enter_no.of_members"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColorHint="#CDDC39" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_to_waitlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#121313"
+        android:onClick="addToWaitlist"
+        android:text="Enter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F0E0E"
+        android:text="choose menu"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@drawable/res"
+        android:id="@+id/all_guests_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+</ScrollView>
