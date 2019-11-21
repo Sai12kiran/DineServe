@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/maps"
+
+        android:title="Locate your Restaurants">
+    </item>
+    <item android:id="@+id/table"
+        android:title="Book Your Table"/>
+    <item android:id="@+id/Party"
+        android:title="Book Your Party"/>
+
+    <item android:title="My Profile"
+        android:id="@+id/Profile"/>
+    <item
+        android:id="@+id/Logout"
+        android:title="LogOut"/>
+
+</menu>
