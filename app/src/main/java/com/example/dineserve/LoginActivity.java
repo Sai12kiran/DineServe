@@ -2,6 +2,9 @@ package com.example.dineserve;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.widget.NestedScrollView;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,6 +18,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
@@ -22,40 +28,38 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity {
-    private static final String TAG = "LoginActivity";
-    private static final int REQUEST_SIGNUP = 0;
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    private final AppCompatActivity activity = LoginActivity.this;
 
-    @BindView(R.id.input_email)
-    EditText _emailText;
-    @BindView(R.id.input_password) EditText _passwordText;
-    @BindView(R.id.btn_login)
-    Button _loginButton;
-    @BindView(R.id.link_signup)
-    TextView _signupLink;
     Button bt1,bt2;
 
-    FirebaseAuth firebaseAuth;
+    private NestedScrollView nestedScrollView;
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
-        {
-            startActivity(new Intent(getApplicationContext(),tabook.class));
-        }
-    }
+    private TextInputLayout textInputLayoutEmail;
+    private TextInputLayout textInputLayoutPassword;
+
+    private TextInputEditText textInputEditTextEmail;
+    private TextInputEditText textInputEditTextPassword;
+
+    private AppCompatButton appCompatButtonLogin;
+
+    private AppCompatTextView textViewLinkRegister;
+
+    private InputValidation inputValidation;
+    private DatabaseHelper databaseHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        ButterKnife.bind(this);
+        bt1=findViewById(R.id.Phone);
+        bt2=findViewById(R.id.google);
 
-        firebaseAuth =FirebaseAuth.getInstance();
-        bt1=findViewById(R.id.gen_otp);
-        bt2=findViewById(R.id.Gsn);
+        initViews();
+        initListeners();
+        initObjects();
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,135 +75,111 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        _loginButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
-
-        _signupLink.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // Start the Signup activity
-                Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
-                startActivityForResult(intent, REQUEST_SIGNUP);
-                finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-            }
-        });
     }
 
-    public void login() {
-        Log.d(TAG, "Login");
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
+        {
+            startActivity(new Intent(getApplicationContext(),tabook.class));
+        }
+    }
 
-        if (!validate()) {
-            onLoginFailed();
+    /**
+     * This method is to initialize views
+     */
+    private void initViews() {
+
+        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+
+        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
+
+        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
+        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
+
+        appCompatButtonLogin = (AppCompatButton) findViewById(R.id.appCompatButtonLogin);
+
+        textViewLinkRegister = (AppCompatTextView) findViewById(R.id.textViewLinkRegister);
+
+    }
+
+
+    private void initListeners() {
+        appCompatButtonLogin.setOnClickListener(this);
+        textViewLinkRegister.setOnClickListener(this);
+    }
+
+    /**
+     * This method is to initialize objects to be used
+     */
+    private void initObjects() {
+        databaseHelper = new DatabaseHelper(activity);
+        inputValidation = new InputValidation(activity);
+
+    }
+
+    /**
+     * This implemented method is to listen the click on view
+     *
+     * @param v
+     */
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.appCompatButtonLogin:
+                verifyFromSQLite();
+                break;
+            case R.id.textViewLinkRegister:
+                // Navigate to RegisterActivity
+                Intent intentRegister = new Intent(getApplicationContext(), SignupActivity.class);
+                startActivity(intentRegister);
+                break;
+
+        }
+    }
+
+    /**
+     * This method is to validate the input text fields and verify login credentials from SQLite
+     */
+    private void verifyFromSQLite() {
+        if (!inputValidation.isInputEditTextFilled(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextEmail(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextFilled(textInputEditTextPassword, textInputLayoutPassword, getString(R.string.error_message_email))) {
             return;
         }
 
-        _loginButton.setEnabled(true);
-
-        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this, R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Authenticating...");
-        progressDialog.show();
-
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-
-        // TODO: Implement your own authentication logic here.
-
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        // On complete call either onLoginSuccess or onLoginFailed
-                        onLoginSuccess();
-                        // onLoginFailed();
-                        progressDialog.dismiss();
-                    }
-                }, 3000);
-        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful())
-
-                {
-
-                    Toast.makeText(LoginActivity.this,"Login Success",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    if(task.getException() instanceof FirebaseAuthInvalidUserException)
-                    {
-
-                        Toast.makeText(LoginActivity.this,"Invavalid user", Toast.LENGTH_SHORT).show();
-                    }
-                }
-                Intent intent=new Intent(LoginActivity.this,tabook.class);
-                startActivity(intent);
-            }
-
-        });
-    }
+        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
+                , textInputEditTextPassword.getText().toString().trim())) {
 
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_SIGNUP) {
-            if (resultCode == RESULT_OK) {
+            Intent accountsIntent = new Intent(activity, tabook.class);
+            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
+            emptyInputEditText();
+            startActivity(accountsIntent);
 
-                // TODO: Implement successful signup logic here
-                // By default we just finish the Activity and log them in automatically
-                this.finish();
-            }
-        }
-    }
 
-    @Override
-    public void onBackPressed() {
-        // Disable going back to the MainActivity
-        moveTaskToBack(true);
-    }
-
-    public void onLoginSuccess() {
-        _loginButton.setEnabled(true);
-        finish();
-    }
-
-    public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
-
-        _loginButton.setEnabled(true);
-    }
-
-    public boolean validate() {
-        boolean valid = true;
-
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-
-        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
-            valid = false;
         } else {
-            _emailText.setError(null);
+            // Snack Bar to show success message that record is wrong
+            Snackbar.make(nestedScrollView, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
         }
-
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
-            valid = false;
-        } else {
-            _passwordText.setError(null);
-        }
-
-        return valid;
-
-
     }
 
+    /**
+     * This method is to empty all input edit text
+     */
+    private void emptyInputEditText() {
+        textInputEditTextEmail.setText(null);
+        textInputEditTextPassword.setText(null);
+
+    }
 }
+
+
+
+

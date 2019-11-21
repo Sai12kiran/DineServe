@@ -5,53 +5,46 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.widget.NestedScrollView;
 
-import android.annotation.SuppressLint;
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.auth.FirebaseAuth;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.jar.Attributes;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
-public class SignupActivity extends AppCompatActivity {
 
-    private static final String TAG = "SignupActivity";
-    FirebaseAuth auth;
-    @BindView(R.id.input_name)
-    EditText _nameText;
-    @BindView(R.id.input_address) EditText _addressText;
-    @BindView(R.id.input_email) EditText _emailText;
-    @BindView(R.id.input_mobile) EditText _mobileText;
-    @BindView(R.id.input_password) EditText _passwordText;
-    @BindView(R.id.input_reEnterPassword) EditText _reEnterPasswordText;
-    @BindView(R.id.btn_signup)
-    Button _signupButton;
-    @BindView(R.id.link_login)
-    TextView _loginLink;
+public class SignupActivity extends AppCompatActivity implements View.OnClickListener{
+    private final AppCompatActivity activity = SignupActivity.this;
 
-    String SQLiteQuery;
-    SQLiteDatabase SQLITEDATABASE;
+    private NestedScrollView nestedScrollView;
 
+    private TextInputLayout textInputLayoutName;
+    private TextInputLayout textInputLayoutEmail;
+    private TextInputLayout textInputLayoutPassword;
+    private TextInputLayout textInputLayoutConfirmPassword;
+    private TextInputLayout textInputLayoutMobileNumber;
+    private TextInputLayout textInputLayoutPlace;
+    private TextInputLayout textInputLayoutPanNumber;
+    private TextInputLayout textInputLayoutAdhaarNumber;
+
+    private TextInputEditText textInputEditTextName;
+    private TextInputEditText textInputEditTextEmail;
+    private TextInputEditText textInputEditTextPassword;
+    private TextInputEditText textInputEditTextConfirmPassword;
+    private TextInputEditText textInputEditTextMobileNumber;
+    private TextInputEditText textInputEditTextPlace;
+    private TextInputEditText textInputEditTextPanNumber;
+    private TextInputEditText textInputEditTextAdhaarNumber;
+
+    private AppCompatButton appCompatButtonRegister;
+    private AppCompatTextView appCompatTextViewLoginLink;
+
+    private InputValidation inputValidation;
+    private DatabaseHelper databaseHelper;
+    private User user;
 
 
     @Override
@@ -59,181 +52,155 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        auth=FirebaseAuth.getInstance();
-
-        ButterKnife.bind(this);
 
 
+        initViews();
+        initListeners();
+        initObjects();
+
+          }
 
 
-        _signupButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signup();
-                dbcrete();
+    private void initViews() {
+        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+
+        textInputLayoutName = (TextInputLayout) findViewById(R.id.textInputLayoutName);
+        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.textInputLayoutConfirmPassword);
+        textInputLayoutMobileNumber=(TextInputLayout) findViewById(R.id.textInputLayoutMobileNumber);
+       textInputLayoutPlace=(TextInputLayout)findViewById(R.id.textInputLayoutPlace);
+       textInputLayoutPanNumber=(TextInputLayout)findViewById(R.id.textInputLayoutPanNumber);
+       textInputLayoutAdhaarNumber=(TextInputLayout)findViewById(R.id.textInputLayoutAdhaarnumber);
+
+        textInputEditTextName = (TextInputEditText) findViewById(R.id.textInputEditTextName);
+        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
+        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
+        textInputEditTextConfirmPassword = (TextInputEditText) findViewById(R.id.textInputEditTextConfirmPassword);
+        textInputEditTextMobileNumber=(TextInputEditText)findViewById(R.id.textInputEditTextMobilenumber);
+        textInputEditTextPlace=(TextInputEditText)findViewById(R.id.textInputEditTextplace);
+        textInputEditTextPanNumber=(TextInputEditText)findViewById(R.id.textInputEditTextPannumber);
+        textInputEditTextAdhaarNumber=(TextInputEditText)findViewById(R.id.textInputEditTextAdhaarNumber);
+
+        appCompatButtonRegister = (AppCompatButton) findViewById(R.id.appCompatButtonRegister);
+
+        appCompatTextViewLoginLink = (AppCompatTextView) findViewById(R.id.appCompatTextViewLoginLink);
+
+    }
+
+    /**
+     * This method is to initialize listeners
+     */
+    private void initListeners() {
+        appCompatButtonRegister.setOnClickListener(this);
+        appCompatTextViewLoginLink.setOnClickListener(this);
+
+    }
+
+    /**
+     * This method is to initialize objects to be used
+     */
+    private void initObjects() {
+        inputValidation = new InputValidation(activity);
+        databaseHelper = new DatabaseHelper(activity);
+        user = new User();
+
+    }
 
 
-            }
+    /**
+     * This implemented method is to listen the click on view
+     *
+     * @param v
+     */
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
 
+            case R.id.appCompatButtonRegister:
+                postDataToSQLite();
+                break;
 
-        });
-
-
-
-
-
-
-        _loginLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Finish the registration screen and return to the Login activity
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(intent);
+            case R.id.appCompatTextViewLoginLink:
                 finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
-            }
-        });
+                break;
+        }
     }
 
+    /**
+     * This method is to validate the input text fields and post data to SQLite
+     */
+    private void postDataToSQLite() {
+        if (!inputValidation.isInputEditTextFilled(textInputEditTextName, textInputLayoutName, getString(R.string.error_message_name))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextFilled(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextEmail(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextFilled(textInputEditTextPassword, textInputLayoutPassword, getString(R.string.error_message_password))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextMatches(textInputEditTextPassword, textInputEditTextConfirmPassword,
+                textInputLayoutConfirmPassword, getString(R.string.error_password_match))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextMatches(textInputEditTextMobileNumber, textInputEditTextMobileNumber,
+                textInputLayoutMobileNumber, getString(R.string.Mobile_Number))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextMatches(textInputEditTextPlace, textInputEditTextPlace,
+                textInputLayoutPlace, getString(R.string.Place))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextMatches(textInputEditTextPanNumber, textInputEditTextPanNumber,
+                textInputLayoutPanNumber, getString(R.string.Pan_Number))) {
+            return;
+        }
+        if (!inputValidation.isInputEditTextMatches(textInputEditTextAdhaarNumber, textInputEditTextAdhaarNumber,
+                textInputLayoutAdhaarNumber, getString(R.string.Adhaar_Number))) {
+            return;
+        }
+
+        if (!databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim())) {
+
+            user.setName(textInputEditTextName.getText().toString().trim());
+            user.setEmail(textInputEditTextEmail.getText().toString().trim());
+            user.setPassword(textInputEditTextPassword.getText().toString().trim());
+            user.setPhonenumber(textInputEditTextMobileNumber.getText().toString().trim());
+            user.setAddress(textInputEditTextPlace.getText().toString().trim());
+            user.setPannumber(textInputEditTextPanNumber.getText().toString().trim());
+            user.setAdhaarNumber(textInputEditTextAdhaarNumber.getText().toString().trim());
+
+            databaseHelper.addUser(user);
+
+            // Snack Bar to show success message that record saved successfully
+            Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
+            emptyInputEditText();
 
 
-    public void dbcrete()
-    {
-        SQLITEDATABASE = openOrCreateDatabase("DisplayDeomtable", Context.MODE_PRIVATE, null);
-
-        SQLITEDATABASE.execSQL("CREATE TABLE IF NOT EXISTS demoTable(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR, phone_number VARCHAR, address VARCHAR,email VARCHAR);");
-
-    }
-
-
-    public void signup() {
-
-
-        Log.d(TAG, "Signup");
-
-
-
-        _signupButton.setEnabled(true);
-
-        final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
-                R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Creating Account...");
-        progressDialog.show();
-
-
-        String name = _nameText.getText().toString();
-        String address = _addressText.getText().toString();
-        String  email = _emailText.getText().toString();
-        String mobile = _mobileText.getText().toString();
-        String password = _passwordText.getText().toString();
-        String reEnterPassword = _reEnterPasswordText.getText().toString();
-
-
-
-
-
-
-
-
-
-
-
-
-        // TODO: Implement your own signup logic here.
-
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        // On complete call either onSignupSuccess or onSignupFailed
-                        // depending on success
-                        onSignupSuccess();
-                        // onSignupFailed();
-                        progressDialog.dismiss();
-                    }
-                }, 3000);
-
-        Intent intent=new Intent(SignupActivity.this,LoginActivity.class);
-        startActivity(intent);
+        } else {
+            // Snack Bar to show error message that record already exists
+            Snackbar.make(nestedScrollView, getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
+        }
 
 
     }
 
-
-
-
-    public void onSignupSuccess() {
-        _signupButton.setEnabled(true);
-        setResult(RESULT_OK, null);
-        finish();
+    /**
+     * This method is to empty all input edit text
+     */
+    private void emptyInputEditText() {
+        textInputEditTextName.setText(null);
+        textInputEditTextEmail.setText(null);
+        textInputEditTextPassword.setText(null);
+        textInputEditTextConfirmPassword.setText(null);
+        textInputEditTextMobileNumber.setText(null);
+        textInputEditTextPlace.setText(null);
+        textInputEditTextPanNumber.setText(null);
+        textInputEditTextAdhaarNumber.setText(null);
     }
-
-    public void onSignupFailed() {
-        Toast.makeText(getBaseContext(), "Signup failed", Toast.LENGTH_LONG).show();
-
-        _signupButton.setEnabled(true);
-    }
-
-    public void validate() {
-        boolean valid = true;
-
-        String name = _nameText.getText().toString();
-        String address = _addressText.getText().toString();
-        String email = _emailText.getText().toString();
-        String mobile = _mobileText.getText().toString();
-        String password = _passwordText.getText().toString();
-        String reEnterPassword = _reEnterPasswordText.getText().toString();
-
-        if (name.isEmpty() || name.length() < 3) {
-            _nameText.setError("at least 3 characters");
-            valid = false;
-        } else {
-            _nameText.setError(null);
-        }
-
-        if (address.isEmpty()) {
-            _addressText.setError("Enter Valid Address");
-            valid = false;
-        } else {
-            _addressText.setError(null);
-        }
-
-
-        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
-            valid = false;
-        } else {
-            _emailText.setError(null);
-        }
-
-        if (mobile.isEmpty() || mobile.length()!=10) {
-            _mobileText.setError("Enter Valid Mobile Number");
-            valid = false;
-        } else {
-            _mobileText.setError(null);
-        }
-
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
-            valid = false;
-        } else {
-            _passwordText.setError(null);
-        }
-
-        if (reEnterPassword.isEmpty() || reEnterPassword.length() < 4 || reEnterPassword.length() > 10 || !(reEnterPassword.equals(password))) {
-            _reEnterPasswordText.setError("Password Do not match");
-            valid = false;
-        } else {
-            _reEnterPasswordText.setError(null);
-        }
-
-        SQLiteQuery = "INSERT INTO displaytable (name,mobile,address,email) VALUES('"+name+"', '"+mobile+"', '"+address+"','"+email+"');";
-        SQLITEDATABASE.execSQL(SQLiteQuery);
-        Toast.makeText(SignupActivity.this,"Data Submit Successfully", Toast.LENGTH_SHORT).show();
-
-
-    }
-
-
-
 }
+

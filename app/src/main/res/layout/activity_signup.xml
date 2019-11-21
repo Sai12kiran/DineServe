@@ -2,134 +2,170 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nestedScrollView"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/logo"
-    android:fitsSystemWindows="true"
-    tools:ignore="InvalidId">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@color/colorAccent"
+    tools:context=".LoginActivity">
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="24dp"
-        android:paddingTop="56dp"
-        android:paddingRight="24dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <!-- Name Label -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:textColorHint="@color/black"
+            android:layout_marginTop="40dp">
 
-            <EditText
-                android:id="@+id/input_name"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:inputType="textPersonName" />
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Address Label -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-
-            <EditText
-                android:id="@+id/input_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Address"
-                android:inputType="textPostalAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <!--  Email Label -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayoutEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
 
-            <EditText
-                android:id="@+id/input_email"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:hint="@string/hint_email"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <!-- mobile number -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
 
-            <EditText
-                android:id="@+id/input_mobile"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile Number"
-                android:inputType="number" />
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:maxLines="1"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Password Label -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputEditTextPassword"
+            android:id="@+id/textInputLayoutConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
 
-            <EditText
-                android:id="@+id/input_password"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword" />
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- Password Re-enter Label -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputEditTextConfirmPassword"
+            android:id="@+id/textInputLayoutMobileNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
 
-            <EditText
-                android:id="@+id/input_reEnterPassword"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextMobilenumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Re-enter Password"
-                android:inputType="textPassword" />
+                android:hint="Mobile_Number"
+                android:maxLines="1"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:hint="Place" />
+        </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/textInputLayoutPanNumber"
+           android:layout_width="match_parent"
+           android:textColorHint="@color/black"
+           android:layout_height="wrap_content">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/textInputEditTextPannumber"
+               android:textColorHint="@color/black"
+               android:hint="Pan_Number"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </com.google.android.material.textfield.TextInputEditText>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAdhaarnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextAdhaarNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:hint="Adhaar_Number" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Signup Button -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signup"
-            android:layout_width="fill_parent"
+            android:id="@+id/appCompatButtonRegister"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="24dp"
-            android:padding="12dp"
-            android:text="Create Account" />
+            android:layout_marginTop="40dp"
+            android:text="@string/text_register" />
 
-        <TextView
-            android:id="@+id/link_login"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextViewLoginLink"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Already a member? Login"
-            android:textSize="16dip" />
-
-    </LinearLayout>
+            android:textSize="16dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>
+

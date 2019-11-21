@@ -383,6 +383,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+
 }
 
 
